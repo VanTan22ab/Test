@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                Mon <span>Tẻn</span>
+            </div>
+            <ul>
+                <li class="active"><i class="fa-solid fa-house-chimney"></i>Home</li>
+                <li><i class="fa-solid fa-user-large"></i>Users</li>
+                <li><i class="fa-solid fa-cart-arrow-down"></i>Products</li>
+            </ul>
+            <ul>
+                <li><a href="https://www.tiktok.com/@111989188_mon?_t=8ptqbykCsOi&_r=1"><i class="fa-brands fa-tiktok"></i>TikTok</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100026691406707&mibextid=ZbWKwL"><i class="fa-brands fa-square-facebook"></i>FaceBook</a></li>
+                <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+            </ul>
+        </div>
+        <div class="center">
+
+            <div class="search">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search ...">
+                    <button>Search</button>
+                </div>
+            </div>
+
+            <h2>Products</h2>
+            <div class="list">
+
+                <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="img/mon1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Mon Mới Sấy Tóc</div>
+                        <div class="des">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias accusantium nulla qui dolore facere dolor?
+                        </div>
+                        <div class="price">$20</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="2">
+                    <div class="img">
+                        <img src="img/mon2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Mon Đi Lấy Đồ</div>
+                        <div class="des">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias accusantium nulla qui dolore facere dolor?
+                        </div>
+                        <div class="price">$17</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="3">
+                    <div class="img">
+                        <img src="img/mon3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Mon Sống Ảo</div>
+                        <div class="des">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias accusantium nulla qui dolore facere dolor?
+                        </div>
+                        <div class="price">$29</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="4">
+                    <div class="img">
+                        <img src="img/mon4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Mon Cấp 3</div>
+                        <div class="des">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias accusantium nulla qui dolore facere dolor?
+                        </div>
+                        <div class="price">$100</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <div class="cart">
+            <div class="name">Cart</div>
+            <div class="listCart">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
